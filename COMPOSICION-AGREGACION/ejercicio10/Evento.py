@@ -95,12 +95,10 @@ class Evento:
         for charla in self.charlas:
             print(f" - {charla.nombreCharla}: {charla.np} participantes")
         print("==============================")
-            
-# Participantes (agregación)
+
 p1 = Participante("Ana", "Gutiérrez", 22, "123456", 101)
 p2 = Participante("Luis", "Paredes", 25, "789101", 102)
 
-# Charla (composición: se pasa la info del speaker directamente)
 charla1 = Charla(
     "Auditorio A",
     "Introducción al Hacking Ético",
@@ -113,7 +111,6 @@ charla2 = Charla("Sala B", "Machine Learning", "Lucía", "Mora", 35, "555333", "
 charla3 = Charla("Sala C", "Redes y Seguridad", "Julio", "Lopez", 45, "888777", "Networking", 1, [])
 
 
-# Evento (agregación)
 evento = Evento(
     "Tech Summit 2025",
     1,
@@ -126,3 +123,5 @@ charla1.promedioEdad()
 evento = Evento("Tech Summit 2025", 3, [charla1, charla2, charla3])
 
 evento.ordenar_nro_participantes()
+
+evento.persona_esta("Ana", "Gutiérrez")
