@@ -1,4 +1,4 @@
-package MANEJO_DE_EXCEPCIONES.ejercicio4;
+package MANEJO_DE_EXCEPCIONES.ejercicio4.java;
 
 public class Main {
     public static void main(String[] args) {

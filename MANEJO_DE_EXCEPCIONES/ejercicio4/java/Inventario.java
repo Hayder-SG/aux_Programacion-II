@@ -1,4 +1,4 @@
-package MANEJO_DE_EXCEPCIONES.ejercicio4;
+package MANEJO_DE_EXCEPCIONES.ejercicio4.java;
 
 import java.util.ArrayList;
 
@@ -11,7 +11,6 @@ public class Inventario {
 
     // c) Agregar Producto
     public void agregarProducto(Producto p) throws Exception {
-        // Validar código repetido
         for (Producto prod : productos) {
             if (prod.getCodigo().equals(p.getCodigo())) {
                 throw new Exception("El código ya existe: " + p.getCodigo());
